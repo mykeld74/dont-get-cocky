@@ -78,7 +78,7 @@
 		line-height: 1;
 	}
 	.days{
-		font-size: 80px;
+		font-size: clamp(40px, 3vw, 80px);
 		text-transform: uppercase;
 		margin: .25em 0 0 0;
 	}
