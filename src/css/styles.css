@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #999;
+}
+p {
+  margin: 0.5em 0;
+}
