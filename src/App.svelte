@@ -31,9 +31,26 @@
 
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&family=Rubik+Mono+One&display=swap');
+	@keyframes spin {
+		from {
+			transform: rotateY(0deg);
+		}
+		to {
+			transform: rotateY(360deg);
+		}
+	}
+	@keyframes reverseSpin {
+		from {
+			transform: rotateY(-180deg);
+		}
+		to {
+			transform: rotateY(180deg);
+		}
+	}
 
 	.container {
 		background: #fff;
+		border-radius: 15px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -73,10 +90,10 @@
 	.rooster{
 		width: clamp(32px, 4vw, 72px);
 		margin: 0 .5em;
-		transform: rotateY(180deg);
+		animation: spin 5s ease-in-out infinite;
 	}
 	.reverse{
-		transform: rotateY(0deg);
+		animation: reverseSpin 5s ease-in-out infinite;
 	}
 	
 
